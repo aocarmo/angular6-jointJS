@@ -1,0 +1,5 @@
+<button (click)="readOnly = !readOnly">ReadOnly: {{ readOnly }}</button>
+<button (click)="scale(-0.2)">Scale Down</button>
+<button (click)="scale(0.2)">Scale Up</button>
+
+<app-modeler [data]="graphData" [readOnly]="readOnly" [scale]="scaleValue"></app-modeler>
